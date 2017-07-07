@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIN	Makefile	/^BIN=httpd$/;"	m
+CC	Makefile	/^CC=gcc$/;"	m
+CGI_BIN	Makefile	/^CGI_BIN=cgi_bin$/;"	m
+FLAGS	Makefile	/^FLAGS=#-D_DEBUG_#-g$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=-lpthread#-static$/;"	m
+OBJ	Makefile	/^OBJ=$(SRC:.c=.o)$/;"	m
+ROOT_PATH	Makefile	/^ROOT_PATH=$(shell pwd)$/;"	m
+SRC	Makefile	/^SRC=$(shell ls *.c)$/;"	m
+_CLIENTSIZE_	httpd.h	19;"	d
+_DEFPATH_	httpd.h	17;"	d
+_SIZE_	httpd.h	18;"	d
+accept_request	httpd.c	/^void accept_request(int sock)$/;"	f	signature:(int sock)
+clear_header	httpd.c	/^void clear_header(int sock)  \/\/清空接收缓冲区$/;"	f	signature:(int sock)
+echo_html	httpd.c	/^void echo_html(int sock,char* path,ssize_t file_size)$/;"	f	signature:(int sock,char* path,ssize_t file_size)
+execute_cgi	httpd.c	/^void execute_cgi(int sock,const char* path,const char* method,char* query_string)$/;"	f	signature:(int sock,const char* path,const char* method,char* query_string)
+get_line	httpd.c	/^int get_line(int sock,char*line,int line_size)\/\/一个字节一个字节读$/;"	f	signature:(int sock,char*line,int line_size)
+main	main.c	/^int main(int argc,char *argv[])$/;"	f	signature:(int argc,char *argv[])
+printferr	httpd.c	/^void printferr(const char* file,const char* func,const int line)$/;"	f	signature:(const char* file,const char* func,const int line)
+startup	httpd.c	/^int startup(char *ip,int port)$/;"	f	signature:(char *ip,int port)
+threadrun	main.c	/^void* threadrun(void *sock)$/;"	f	signature:(void *sock)
+usage	httpd.c	/^void usage(const char * proc)$/;"	f	signature:(const char * proc)
